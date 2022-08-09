@@ -1,0 +1,35 @@
+{
+  "name": "sofiaplus-api",
+  "version": "1.0.0",
+  "description": "Sistema de gestion de sesiones de usuarios",
+  "main": "core/index.js",
+  "scripts": {
+    "test": "nodemon .",
+    "start": "nodemon ."
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SENA-tech/SofiaPlus-API.git"
+  },
+  "keywords": [
+    "API",
+    "SofiaPlus",
+    "CRUD"
+  ],
+  "author": "SENA-tech",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SENA-tech/SofiaPlus-API/issues"
+  },
+  "homepage": "https://github.com/SENA-tech/SofiaPlus-API#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

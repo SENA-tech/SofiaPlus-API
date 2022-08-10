@@ -6,7 +6,6 @@ const newUser = new Schema({
     lastName: { type: String, required: true },
     doctype: { type: String, required: true },
     document: { type: Number, required: true },
-    email: { type: String, required: true },
     password: { type: String, required: true },
 });
 

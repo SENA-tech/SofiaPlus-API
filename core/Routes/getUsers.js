@@ -8,18 +8,23 @@ const router = express.Router();
 //Route -> POST
 router.post("/", (req, res) => {
 
-    const { id, pass, type } = req.body;
+    const { id } = req.body;
 
     const data = async () => {
-        const user = await User.find({ document: id });
-        return user;
-    }
+        const user = await User.findById({ document: id }, (err, user) => {
+            if (err) {
+                console.log(err);
+            } else {
+                return user;
+            }
+        }
+        )
+    };
 
     data().then(user => {
         if (type === user[0].doctype && pass === user[0].password) {
             console.log("Login exitoso");
             res.json({
-                _key: user[0]._id,
                 _id: user[0].document,
                 _name: user[0].name,
                 validate: true,

@@ -27,6 +27,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/user/aouth", require("./Routes/userLogin"));
 app.use("/api/user/register", require("./Routes/userCreate"));
+app.use("/api/profile", require("./Routes/getUsers"));
 
 app.listen(app.get("port"), () => {
     console.log(`Server on port ${app.get("port")}`);

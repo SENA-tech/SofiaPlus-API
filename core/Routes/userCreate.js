@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 //Elements
-const User = require("../models/logUser");
+const User = require("../Models/logUser");
 
 //Route -> PUT
 router.put("/", async (req, res) => {

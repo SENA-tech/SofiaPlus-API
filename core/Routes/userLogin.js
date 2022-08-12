@@ -1,7 +1,7 @@
 const express = require("express");
 
 //Elements
-const User = require("../models/logUser");
+const User = require("../Models/logUser");
 
 const router = express.Router();
 
